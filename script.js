@@ -18,6 +18,9 @@ function mincost(arr)
 
 		res += (first + second);
 		pq.push(first + second);
+		pq.sort(function(a,b){
+	  		return a-b;
+	  	});
 	}
 	return res;
 }
